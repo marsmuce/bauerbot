@@ -11,5 +11,5 @@ client.on('message', msg => {
   }
 });
 
-client.login(System.getenv.CLIENT_SECRET);
+client.login(process.env.CLIENT_SECRET);
 
