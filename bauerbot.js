@@ -11,5 +11,5 @@ client.on('message', msg => {
   }
 });
 
-client.login(process.env.CLIENT_SECRET);
+client.login(process.env.TOKEN);
 
