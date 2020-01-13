@@ -1,0 +1,19 @@
+{
+  "name": "bauerbot",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "bauerbot.js",
+  "scripts": {
+    "start": "node bauerbot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowercase-txt/bauerbot.git"
+  },
+  "author": "lowercase-txt",
+  "license": "GNU General Public Liscense v3.0",
+  "bugs": {
+    "url": "https://github.com/lowercase-txt/bauerbot/issues"
+  },
+  "homepage": "https://github.com/lowercase-txt/bauerbot#readme"
+}
