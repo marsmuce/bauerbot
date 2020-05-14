@@ -9,13 +9,12 @@ module.exports = {
       'Neat',
       'Bauer is Power',
       'Where the fuck is my son?',
-      'Nigga',
     ] },
 
     { "name":"classic", "quotes":[ 
 
       "A distant humming filled the empty streets of the old, abandoned city, singing an old tune from hundreds of years before.",
-      "And in the eyes of Adrian Bauer, the darkness of death lasted for eternity."
+      "And in the eyes of Adrian Bauer, the darkness of death lasted for eternity.",
     ] },
     
 
@@ -24,7 +23,7 @@ module.exports = {
       "“What for? Where am I-” - Adrian Bauer Remastered (The Escape of Adrian Bauer)",
       "“Morning,” - Adrian Bauer Remastered (The Escape of Adrian Bauer)",
       "“Have you heard anything about the plans for today?” - Adrian Bauer Remastered (The Escape of Adrian Bauer)",
-      "“I see,” - Adrian Bauer Remastered (The Escape of Adrian Bauer)"
+      "“I see,” - Adrian Bauer Remastered (The Escape of Adrian Bauer)",
     ] },
     
 
