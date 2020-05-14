@@ -9,7 +9,6 @@ module.exports = {
       'Neat',
       'Bauer is Power',
       'Where the fuck is my son?',
-      'Nigga',
       'Bauer 2 when, @Imperator Nokov#8212?',
     ] },
 
