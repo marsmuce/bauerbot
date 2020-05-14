@@ -7,9 +7,9 @@ module.exports = {
     if (isNaN(p) || p <= 1) {
       return message.reply('that doesn\'t seem to be a valid number.');
     } else if (p > 99) { 
-      let px = p - 99; if (px > 99) { let py = px - 99; if (py > 99) { let pz = py - 99; if (pz > 99) { let pz = 99; } message.channel.bulkDelete(99, true); message.channel.bulkDelete(px, true); message.channel.bulkDelete(py, true); message.channel.bulkDelete(pz, true); } message.channel.bulkDelete(99, true); message.channel.bulkDelete(px, true); message.channel.bulkDelete(py, true); } message.channel.bulkDelete(99, true); message.channel.bulkDelete(px, true);
+      let px = p - 99; if (px > 99) { let py = px - 99; if (py > 99) { let pz = py - 99; if (pz > 99) { let pz = 99; } message.channel.bulkDelete(99, false); message.channel.bulkDelete(px, false); message.channel.bulkDelete(py, false); message.channel.bulkDelete(pz, false); } message.channel.bulkDelete(99, false); message.channel.bulkDelete(px, false); message.channel.bulkDelete(py, false); } message.channel.bulkDelete(99, false); message.channel.bulkDelete(px, false);
     } else {
-      message.channel.bulkDelete(p, true);
+      message.channel.bulkDelete(p, false);
     }
   },
 };
