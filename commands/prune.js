@@ -7,7 +7,7 @@ module.exports = {
     if (isNaN(p) || p <= 1 || p >= 100 ) {
       return message.reply('that doesn\'t seem to be a valid integer between 0 and 100.');
     } else {
-      message.channel.bulkDelete(p);
+      message.channel.bulkDelete(p, true);
     }
   },
 };
