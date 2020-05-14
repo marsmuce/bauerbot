@@ -1,5 +1,5 @@
 module.exports = {
-	name: 'link',
+	name: 'auer',
 	description: 'link to bauer',
 	execute(message, args) {
 
