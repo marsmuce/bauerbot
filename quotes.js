@@ -16,7 +16,6 @@ module.exports = {
 
       "A distant humming filled the empty streets of the old, abandoned city, singing an old tune from hundreds of years before.",
       "And in the eyes of Adrian Bauer, the darkness of death lasted for eternity."
-      "Bauer 2 when, @Imperator Nokov#8212?"
     ] },
     
 
