@@ -7,7 +7,7 @@ module.exports = {
 
 		if (isNaN(p)) {
 			return message.reply('that doesn\'t seem to be a valid number.');
-		} else if (p <= 1 || p > 100) {
+		} else if (p <= 1 || p > 10000) {
 			return message.reply('you need to input a number between 1 and 99.');
 		}
 
