@@ -11,7 +11,7 @@ module.exports = {
 		} else if (p <= 1 || p > 100) {
 			return message.reply('you need to input a number between 1 and 99.');
 		}
-		if (isNan(q)) {
+		if (isNan(dupe)) {
 			if (isNaN(p)) {
 				return message.reply('that doesn\'t seem to be a valid number.');
 			} else if (p <= 1 || p > 100) {
