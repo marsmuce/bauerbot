@@ -19,15 +19,12 @@ module.exports = {
 			}
 			message.channel.bulkDelete(p, true).catch(err => {
 			console.error(err); message.channel.send(err);});
-		} else {
+		} else if (dupe > 1) {
 			while (dupe > 0) {
 				message.channel.bulkDelete(p, true).catch(err => {
 				console.error(err); message.channel.send(err);});
 				dupe = dupe - 1;
 			}
 		}
-
-		message.channel.bulkDelete(p, true).catch(err => {
-		console.error(err); message.channel.send(err);});
 	},
 };
