@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'lood',
+  name: 'ood',
   description: 'clone and delete channel',
   admin: true,
   execute(message, args) {
