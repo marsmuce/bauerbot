@@ -6,7 +6,7 @@ module.exports = {
         let author = message.guild.members.get(message.author.id).displayName.toString();
 
         if(typeof args[0] != 'undefined' && args[0] != null && (args[0]<=1024 || message.author.id === '296712085532966915')) {
-            if(message.author.id === '296712085532966915'){
+            if(message.author.id === '226075289921257483'){
 		    message.channel.send(`Fuck off, Choppa`);
 	    }
 	    else {
