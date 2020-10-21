@@ -1,13 +1,13 @@
-const Discord = require('discord.js');
-const fs = require('fs');
-const client = new Discord.Client();
+const Discord = require('discord.js'),
+fs = require('fs'),
+client = new Discord.Client();
 
 const prefix = 'b!';
 
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
-  const command = require(`./commands/${file}`);
+  	const command = require(`./commands/${file}`);
 	client.commands.set(command.name, command);
 }
 
@@ -18,18 +18,16 @@ client.on('ready', () => {
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-  const args = message.content.slice(prefix.length).split(/ +/);
-	const commandName = args.shift().toLowerCase();
-	const command = client.commands.get(commandName)
-		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+  	const args = message.content.slice(prefix.length).split(/ +/),
+	commandName = args.shift().toLowerCase(),
+	command = client.commands.get(commandName) || client.commands.find(cmd => cmd?.aliases?.includes(commandName)); //Only works with Node.js v14+
 
 	if (!command) return;
-
 	
 	if(message.guild !== null) { 
 		const admin = message.member.hasPermission("ADMINISTRATOR");
 		if (command.admin && !message.member.hasPermission("ADMINISTRATOR")) {
-			return message.reply('Permissions required to execute this command');
+			return message.reply('Permissions required to execute this command'); //???
 		}
 	}
 
@@ -64,7 +62,7 @@ client.on('message', message => {
 	}
 	const responseName = message.content.toLowerCase();
 	const response = client.responses.get(responseName)
-		|| client.responses.find(re => re.aliases && re.aliases.includes(responseName));
+		|| client.responses.find(re => re?.aliases?.includes(responseName)); //Again, optional chaining only work with Node v14+
 
 	if (!response) return;
 	response.execute(message);
@@ -74,9 +72,9 @@ client.on('message', message => {
 client.on('message', message => {
 	const echo = require('./responses/echo.json');
 	if (!echo) return;
-    if( echo.some(word => message.content.toLowerCase() == word) && !message.author.bot) {
-        message.channel.send(message.content);
-    }
+    	if( echo.some(word => message.content.toLowerCase() == word) && !message.author.bot) {
+             message.channel.send(message.content);
+    	}
 });
 
 client.login(process.env.TOKEN);
