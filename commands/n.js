@@ -3,6 +3,7 @@ module.exports = {
 	description: 'Yeah, I\'ve got time.',
 	execute(message, args) {
 		var rand_num = Math.floor(Math.random() * 21);
+		if(args[0] != 'undefined' && args[0] >= 0 && args[0] <= 21) rand_num = args[0];
 		switch(rand_num) {
 			case 0:
 				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767568589997211658/1018201903_HDR.jpg');
@@ -66,6 +67,9 @@ module.exports = {
 				break;
 			case 20:
 				message.channel.send('https://cdn.discordapp.com/attachments/387019454275649546/763961971086458930/unknown.png');
+				break;
+			case 21:
+				message.channel.send('https://cdn.discordapp.com/attachments/403269780682833920/761018638852685834/unknown.png');
 				break;
 		}
 	},
