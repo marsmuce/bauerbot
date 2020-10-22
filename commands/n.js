@@ -2,8 +2,9 @@ module.exports = {
 	name: 'n',
 	description: 'Yeah, I\'ve got time.',
 	execute(message, args) {
-		var rand_num = Math.floor(Math.random() * 21);
+		var rand_num;);
 		if(args[0] != 'undefined' && args[0] >= 0 && args[0] <= 21) rand_num = args[0];
+		else rand_num = Math.floor(Math.random() * 21);
 		switch(rand_num) {
 			case 0:
 				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767568589997211658/1018201903_HDR.jpg');
