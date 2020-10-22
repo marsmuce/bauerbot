@@ -2,7 +2,7 @@ module.exports = {
 	name: 'n',
 	description: 'Yeah, I\'ve got time.',
 	execute(message, args) {
-		var rand_num = Math.floor(Math.random() * 12);
+		var rand_num = Math.floor(Math.random() * 21);
 		switch(rand_num) {
 			case 0:
 				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767568589997211658/1018201903_HDR.jpg');
@@ -39,6 +39,33 @@ module.exports = {
 				break;
 			case 11:
 				message.channel.send('https://cdn.discordapp.com/attachments/387019454275649546/759507648860389406/The_Good_the_Bad_and_the_Aliens_continue_to.png');
+				break;
+			case 12:
+				message.channel.send('https://cdn.discordapp.com/attachments/549767292209070081/763880618324000878/retard.png');
+				break;
+			case 13:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/768628101059182653/ogod.PNG');
+				break;
+			case 14:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/768296752838737960/unknown-38.png');
+				break;
+			case 15:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/768294370121744384/8212.jpg');
+				break;
+			case 16:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/768244825933086751/20201020_184959.jpg');
+				break;
+			case 17:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/768206495233867776/unknown.png');
+				break;
+			case 18:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767889887726534666/20201019_192008.jpg');
+				break;
+			case 19:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/766732780666749018/tumblr_o19jt756l41uwohkdo5_500.gif');
+				break;
+			case 20:
+				message.channel.send('https://cdn.discordapp.com/attachments/387019454275649546/763961971086458930/unknown.png');
 				break;
 		}
 	},
