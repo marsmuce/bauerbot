@@ -2,7 +2,7 @@ module.exports = {
 	name: 'n',
 	description: 'Yeah, I\'ve got time.',
 	execute(message, args) {
-		int rand_num = Math.floor(Math.random() * 12);
+		var rand_num = Math.floor(Math.random() * 12);
 		switch(rand_num) {
 			case 0:
 				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767568589997211658/1018201903_HDR.jpg');
