@@ -2,7 +2,7 @@ module.exports = {
 	name: 'n',
 	description: 'Yeah, I\'ve got time.',
 	execute(message, args) {
-		var rand_num;
+		var rand_num = 0;
 		if(args[0] != 'undefined' && args[0] >= 0 && args[0] <= 21) rand_num = args[0];
 		else rand_num = Math.floor(Math.random() * 21);
 		switch(rand_num) {
