@@ -4,10 +4,10 @@ module.exports = {
 	execute(message, args) {
 		var rand_num = 0;
 		// message.channel.send(args[0]);
-		if(typeof args[0] != 'undefined' && args[0] != null && args[0] >= 0 && args[0] <= 22) {
+		if(typeof args[0] != 'undefined' && args[0] != null && args[0] >= 0 && args[0] <= 23) {
 			rand_num = Number(args[0]);
 			// message.channel.send("Rand num is " + rand_num);
-		} else if(typeof args[0] == 'undefined' || args[0] == null || args[0] < 0 || args[0] > 21) rand_num = Math.floor(Math.random() * 21);
+		} else if(typeof args[0] == 'undefined' || args[0] == null || args[0] < 0 || args[0] > 23) rand_num = Math.floor(Math.random() * 23);
 		switch(rand_num) {
 			case 0:
 				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767568589997211658/1018201903_HDR.jpg');
@@ -77,6 +77,9 @@ module.exports = {
 				break;
 			case 22:
 				message.channel.send('https://cdn.discordapp.com/attachments/717134302177132584/769310193724686396/1022201310_HDR3.jpg');
+				break;
+			case 23:
+				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/769314984286355456/1020202113_HDR.jpg');
 				break;
 		}
 	},
