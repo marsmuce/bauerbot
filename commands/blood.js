@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'ood',
+  name: 'blood',
   description: 'clone and delete channel',
   admin: true,
   execute(message, args) {
-    if (args[0] === 'for' && args[1] === 'the' && args[2] === 'blood' && args[3] === 'god!') {
+    if (args.join(" ").toLowerCase() !== "for the blood god!") {
       message.channel.clone();
       message.channel.delete();
     }
