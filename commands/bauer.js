@@ -3,7 +3,7 @@ module.exports = {
 	description: 'link to bauer',
 	execute(message, args) {
 
-		if (typeof args[0] != 'undefined' || args[0] != null) {
+		if (message.author.id === '646425038140080139' && (typeof args[0] != 'undefined' || args[0] != null)) {
 			switch (args[0]) {
 				case 'bauer':
 					message.channel.send({embed: {
