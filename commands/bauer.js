@@ -3,7 +3,7 @@ module.exports = {
 	description: 'link to bauer',
 	execute(message, args) {
 		if(message.author.id === '646425038140080139') {
-			message.channel.send("fuck off dot.");
+			message.channel.send(`fuck off dot.`);
 		}
 		if (!(message.author.id === '646425038140080139') && (typeof args[0] != 'undefined' || args[0] != null)) {
 			switch (args[0]) {
