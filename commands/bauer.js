@@ -2,8 +2,10 @@ module.exports = {
 	name: 'auer',
 	description: 'link to bauer',
 	execute(message, args) {
-
-		if (message.author.id === '646425038140080139' && (typeof args[0] != 'undefined' || args[0] != null)) {
+		if(!(message.author.id === '646425038140080139')) {
+			message.channel.send("fuck off dot.");
+		}
+		if (!(message.author.id === '646425038140080139') && (typeof args[0] != 'undefined' || args[0] != null)) {
 			switch (args[0]) {
 				case 'bauer':
 					message.channel.send({embed: {
@@ -53,7 +55,7 @@ module.exports = {
 					}});
 					break;
 			}
-		} else {
+		} else if(!(message.author.id === '646425038140080139')){
 			message.channel.send({embed: {
 				title: "The War for New Detroit",
 				url: "https://docs.google.com/document/d/1hz4mx-bgiXH-3rh9uxLUtW7CmJle-NVrkBMmfBGPzck/",
