@@ -7,7 +7,9 @@ module.exports = {
 
         if(typeof args[0] != 'undefined' && args[0] != null && (args[0]<=25 || message.author.id === '296712085532966915')) {
             if(message.author.id === '226075289921257483'){
-		    message.channel.send(`Fuck off, Choppa`);
+		    message.channel.send(`Fuck off, Choppa.`);
+	    } else if(message.author.id === '539884067307520020'){
+		    message.channel.send(`Fuck off, Frog.`);
 	    }
 	    else {
 		for (var i = 0; i < args[0]; i++) { 
