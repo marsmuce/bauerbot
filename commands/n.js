@@ -1,6 +1,5 @@
 module.exports = {
 	name: 'n',
-	admin: true,
 	description: 'Yeah, I\'ve got time.',
 	execute(message, args) {
 		var rand_num = 0;
