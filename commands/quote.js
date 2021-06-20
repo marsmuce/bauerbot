@@ -4,7 +4,7 @@ module.exports = {
 	execute(message, args) {
 
         const quotes = require('../quotes.js');
-
+	message.channel.bulkDelete(1, true);
         if(quotes.section[args[0]] && quotes.section[args[0]].quotes[args[1]]) {
             
             message.channel.send(quotes.section[args[0]].quotes[args[1]]);
