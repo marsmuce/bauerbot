@@ -1,9 +1,11 @@
 module.exports = {
 	name: 'n',
+	admin: true,
 	description: 'Yeah, I\'ve got time.',
 	execute(message, args) {
 		var rand_num = 0;
 		// message.channel.send(args[0]);
+		message.channel.bulkDelete(1, true);
 		if(typeof args[0] != 'undefined' && args[0] != null && args[0] >= 0 && args[0] <= 24) {
 			rand_num = Number(args[0]);
 			// message.channel.send("Rand num is " + rand_num);
