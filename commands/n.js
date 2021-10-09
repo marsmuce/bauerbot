@@ -5,10 +5,10 @@ module.exports = {
 		var rand_num = 0;
 		// message.channel.send(args[0]);
 		message.channel.bulkDelete(1, true);
-		if(typeof args[0] != 'undefined' && args[0] != null && args[0] >= 0 && args[0] <= 26) {
+		if(typeof args[0] != 'undefined' && args[0] != null && args[0] >= 0 && args[0] <= 27) {
 			rand_num = Number(args[0]);
 			// message.channel.send("Rand num is " + rand_num);
-		} else if(typeof args[0] == 'undefined' || args[0] == null || args[0] < 0 || args[0] > 26) rand_num = Math.floor(Math.random() * 26);
+		} else if(typeof args[0] == 'undefined' || args[0] == null || args[0] < 0 || args[0] > 27) rand_num = Math.floor(Math.random() * 27);
 		switch(rand_num) {
 			case 0:
 				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767568589997211658/1018201903_HDR.jpg');
@@ -90,6 +90,9 @@ module.exports = {
 				break;
 			case 26:
 				message.channel.send('https://cdn.discordapp.com/attachments/870787961652936735/896480123149230140/0728211458_HDR.jpg');
+				break;
+			case 27:
+				message.channel.send('https://cdn.discordapp.com/attachments/870787961652936735/896480165960511508/ratweapon2.jpg');
 				break;
 		}
 	},
