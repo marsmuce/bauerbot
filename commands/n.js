@@ -5,10 +5,10 @@ module.exports = {
 		var rand_num = 0;
 		// message.channel.send(args[0]);
 		message.channel.bulkDelete(1, true);
-		if(typeof args[0] != 'undefined' && args[0] != null && args[0] >= 0 && args[0] <= 24) {
+		if(typeof args[0] != 'undefined' && args[0] != null && args[0] >= 0 && args[0] <= 26) {
 			rand_num = Number(args[0]);
 			// message.channel.send("Rand num is " + rand_num);
-		} else if(typeof args[0] == 'undefined' || args[0] == null || args[0] < 0 || args[0] > 24) rand_num = Math.floor(Math.random() * 24);
+		} else if(typeof args[0] == 'undefined' || args[0] == null || args[0] < 0 || args[0] > 26) rand_num = Math.floor(Math.random() * 26);
 		switch(rand_num) {
 			case 0:
 				message.channel.send('https://cdn.discordapp.com/attachments/379067857893589004/767568589997211658/1018201903_HDR.jpg');
@@ -84,6 +84,12 @@ module.exports = {
 				break;
 			case 24:
 				message.channel.send('https://cdn.discordapp.com/attachments/717134302177132584/771173458909593640/1028201747a_HDR.jpg');
+				break;
+			case 25:
+				message.channel.send('https://cdn.discordapp.com/attachments/870787961652936735/896475778731114496/unknown.png');
+				break;
+			case 26:
+				message.channel.send('https://cdn.discordapp.com/attachments/870787961652936735/896480123149230140/0728211458_HDR.jpg');
 				break;
 		}
 	},
